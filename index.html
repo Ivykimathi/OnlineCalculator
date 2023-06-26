@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calc">
+        <h3 style="text-align: center;color:blueviolet">Online Calculator</h3><br/>
+        <input type="text" id="ans" readonly>
+          <table>
+            <tr>
+                <td> <button onclick="clear()">C</button></td>
+                <td><button onclick="backspace()">&#9003;</button></td>
+                <td><button onclick="appendOperator('%')">%</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(1)">1</button></td>
+                <td><button onclick="appendNumber(2)">2</button></td>
+                <td><button onclick="appendNumber(3)">3</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(4)">4</button></td>
+                <td><button onclick="appendNumber(5)">5</button></td>
+                <td><button onclick="appendNumber(6)">6</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendNumber(7)">7</button></td>
+                <td><button onclick="appendNumber(8)">8</button></td>
+                <td><button onclick="appendNumber(9)">9</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendOperator('+')">+</button></td>
+                <td><button onclick="appendNumber(0)">0</button></td>
+                <td><button onclick="appendOperator('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendOperator('/')">/</button></td>
+                <td><button onclick="appendOperator('*')">*</button></td>
+                <td><button onclick="calculate()">=</button></td>
+            </tr>
+
+          </table> 
+           
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
